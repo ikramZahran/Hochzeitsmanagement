@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+  <title>Wedding Card</title>
+</head>
+<body>
+  <div class="card">
+    <img src="wedding.png" alt="birthday" class="birthday">
+    <div class="text">
+      <h1 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-style: italic; color:pink; font-size:65px;">We want you to be with us</h1>
+      <p style="font-size: 30px;">The 20 March - 14:30</p>
+      <p class="muted" style="font-size: 24px; color:black">Palais Benjelloun</p>
+    </div>
+    <div class="space"></div>
+  </div>
+  <style>
+    
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+body {
+  background: #d1717e;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.card {
+  background: #fdfdfd;
+  border-radius: 25px;
+  height: 85vh;
+  width: 80vw;
+  box-shadow: 0 5px 6px rgba(255, 255, 255, 255), 0 5px 10px rgba(255, 255, 255, 255);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 1000px) {
+  .card {
+    flex-direction: row-reverse;
+  }
+  .card img.birthday {
+    width: 40%;
+    max-width: 50vw;
+    max-height: unset;
+    margin-top: 45px;
+  }
+}
+
+@media only screen and (max-height: 640px) {
+  .card {
+    flex-direction: row-reverse;
+  }
+  .card img.birthday {
+    width: 50%;
+    max-width: 50vw;
+    max-height: unset;
+  }
+}
+
+img.birthday {
+  max-height: 20vh;
+}
+
+.text {
+  padding: 1em;
+}
+
+.muted {
+  opacity: 0.8;
+}
+
+.space {
+  height: 100px;
+}
+  </style>
+</body>
+</html>

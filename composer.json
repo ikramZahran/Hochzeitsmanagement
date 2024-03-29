@@ -1,0 +1,19 @@
+{
+    "name": "pc/gestionmariage",
+    "type": "project",
+    "require": {
+        "phpmailer/phpmailer": "^6.5",
+        "psr/log": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pc\\Gestionmariage\\": "public/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ikramZahran",
+            "email": "ikram.zahrane@gmail.Com"
+        }
+    ]
+}
